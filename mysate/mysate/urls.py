@@ -17,12 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from hello.views import index
-
-from privet.views import get_privet
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
-    path('privet/', get_privet)
+
 ]

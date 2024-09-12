@@ -1,4 +1,4 @@
-1)http обрабатуются в файле views.py
-2)главный файл который отвечает за маршутизаторы название проекта и файл urls.py
-3)django-admin startproject <название проекта>
-4)python3 startapp <название>
+1)для описание модели
+2)python manage.py makemigrations
+3)migrations
+4)python manage.py migrate

@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8820500-8fe0-4f43-930f-9877be318367" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/mysate/library/templates/author.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysate/library/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysate/library/templates/publisher.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysate/library/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysate/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysate/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysate/library/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysate/library/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysate/library/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysate/library/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysate/mysate/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysate/mysate/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/text.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +57,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "practic5",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "git-widget-placeholder": "practic6",
     "last_opened_file_path": "/Users/romanrukavcuk/Documents/project/python/project 1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -112,7 +119,7 @@
       <workItem from="1725948725152" duration="1214000" />
       <workItem from="1726149399712" duration="167000" />
       <workItem from="1726149602712" duration="1854000" />
-      <workItem from="1726492406170" duration="1755000" />
+      <workItem from="1726492406170" duration="3647000" />
     </task>
     <servers />
   </component>

@@ -5,29 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8820500-8fe0-4f43-930f-9877be318367" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysate/student/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysate/student/models/course.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysate/student/models/student.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysate/student/models/teacher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysate/author/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysate/library/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysate/author/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysate/author/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysate/author/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysate/library/models/author.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysate/author/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysate/author/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysate/author/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysate/book/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysate/library/models/book.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysate/book/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysate/book/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysate/book/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysate/library/models/publisher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysate/book/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysate/book/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysate/book/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mysate/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysate/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysate/mysate/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysate/mysate/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysate/library/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysate/library/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "practic4",
+    "git-widget-placeholder": "practic5",
     "last_opened_file_path": "/Users/romanrukavcuk/Documents/project/python/project 1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -132,7 +112,7 @@
       <workItem from="1725948725152" duration="1214000" />
       <workItem from="1726149399712" duration="167000" />
       <workItem from="1726149602712" duration="1854000" />
-      <workItem from="1726492406170" duration="1401000" />
+      <workItem from="1726492406170" duration="1755000" />
     </task>
     <servers />
   </component>

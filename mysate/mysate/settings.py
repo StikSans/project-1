@@ -55,6 +55,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mysate.urls'
 
+MADIA_ROOT = os.path.join(BASE_DIR,'media')
+MADIA_URL = '/media/'
+
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 TEMPLATES = [

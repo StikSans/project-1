@@ -22,8 +22,21 @@
                             <button type="submit">Найти</button>
                         </form>
                     </li>
-                    <li><a href="">Войти</a></li>
-                    <li><a href="{% url "reg" %}">Зарегестрироватся</a></li>
+                    {% if request.user.username %}
+
+                        <li>{{request.user.username}}</li>
+                        <li>
+                            <form action="{% url "logout" %}" method="post">
+                               {% csrf_token %}
+                               <button type="submit">Выйти</button>
+                            </form>
+                        </li>
+                    {% endif %}
+                    {% if not request.user.username%}
+                        <li><a href="{% url "login" %}">Войти</a></li>
+                        <li><a href="{% url "reg" %}">Зарегестрироватся</a></li>
+                    {% endif %}
+                    
                     <li><a href="{% url "home" %}">Домой</a></li>
                     <li><a href="{% url "about" %}">О нас</a></li>
                     <li><a href="{% url "product" %}">Товары</a></li>
@@ -31,8 +44,8 @@
             </nav>
         </div>
     </header>
-
     <main class="mt-3">
+
         {% block content %}
         {% endblock %}
     </main>

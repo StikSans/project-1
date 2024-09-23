@@ -15,7 +15,13 @@
                 Technique
             </div>
             <nav>
-                <ul class="flex items-centr gap-3">
+                <ul class="flex items-center gap-3">
+                    <li>
+                        <form action="{% url "search" %}" class="flex gap-2">
+                            <input class="rounded p-1" type="text" placeholder="Поиск" name="search">
+                            <button type="submit">Найти</button>
+                        </form>
+                    </li>
                     <li><a href="{% url "home" %}">Домой</a></li>
                     <li><a href="{% url "about" %}">О нас</a></li>
                     <li><a href="{% url "product" %}">Товары</a></li>

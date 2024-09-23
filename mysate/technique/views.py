@@ -15,3 +15,9 @@ def product(req: HttpRequest):
 
 def about(req: HttpRequest):
     return render(req, 'about.html')
+
+
+
+def product_detail(req: HttpRequest, pk: int):
+    product = Techique.objects.get(pk=pk)
+    return render(req, 'product_detail.html', {'product': product})

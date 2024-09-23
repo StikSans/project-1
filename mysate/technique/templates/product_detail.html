@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mx-auto">
+    <div class="flex flex wrap">
+        <img class="w-[600px]" src="{{ product.image.url }}" alt="">
+        <div class='flex flex-col gap-3'>
+            <div>Название: {{product.title}}</div>
+            <div>Описание: {{product.description}}</div>
+            <div>Райтинг: {{product.rating}}</div>
+            <div>Цена: {{product.price}} руб.</div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

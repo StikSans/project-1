@@ -7,10 +7,11 @@
             <div class="flex flex-col bg-gray-200 w-[300px]  rounded">
                 <img src="{{element.image.url}}" style="border-radius: 5px 5px 0 0;" alt="">
                 <div class="p-3">
-                    <h1 class="text-xl font-bold">{{element.title}}</h1>
+                    <h1 class="text-xl font-bold flex flex-col gap-2">{{element.title}}</h1>
                     <p>Описание: {{element.description}}</p>
                     <p>Рейтинг: {{element.rating}}</p>
-                    <p>Цена: {{element.price}}</p>
+                    <p>Цена: {{element.price}} руб.</p>
+                    <a class="rounded p-1 bg-gray-400 mt-2" href="{% url 'product_detail' element.id%}">Перейти к товару</a>
                 </div>
                 
             </div>

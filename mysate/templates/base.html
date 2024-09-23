@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="bg-gray-300 p-3 rounded m-2">
+        <div class="container flex mx-auto justify-between">
+            <div class="">
+                Technique
+            </div>
+            <nav>
+                <ul class="flex items-centr gap-3">
+                    <li><a href="{% url "home" %}">Домой</a></li>
+                    <li><a href="{% url "about" %}">О нас</a></li>
+                    <li><a href="{% url "product" %}">Товары</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mt-3">
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

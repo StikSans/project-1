@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'library.apps.LibraryConfig',
     'student.apps.StudentConfig',
     'technique.apps.TechniqueConfig',
+    'acount.apps.AcountConfig',
 ]
 
 MIDDLEWARE = [

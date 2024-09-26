@@ -10,6 +10,7 @@ class RegisterUser(UserCreationForm):
             attrs={
                 "autocomplete": 'text',
                 "placeholder": "Ведите логин",
+                 "class": "MyInput"
             }
         ),
         required=True,
@@ -20,6 +21,7 @@ class RegisterUser(UserCreationForm):
             attrs={
                 "autocomplete": 'email',
                 "placeholder": "Введите адрес электронной почты",
+                 "class": "MyInput"
             }
         ),
         required=True,
@@ -28,6 +30,7 @@ class RegisterUser(UserCreationForm):
         widget=forms.PasswordInput(
             attrs={
                 "placeholder": "Введите пароль",
+                 "class": "MyInput"
             }
         ),
         required=True
@@ -36,6 +39,7 @@ class RegisterUser(UserCreationForm):
         widget=forms.PasswordInput(
             attrs={
                 "placeholder": "Подтвердите пароль",
+                 "class": "MyInput"
             }
         ),
         required=True
@@ -70,6 +74,7 @@ class LoginUser(AuthenticationForm):
             attrs={
                 "autocomplete": 'text',
                 "placeholder": "Введите логин",
+                "class": "MyInput"
             }
         ),
         required=True
@@ -78,6 +83,7 @@ class LoginUser(AuthenticationForm):
         widget=forms.PasswordInput(
             attrs={
                 "placeholder": "Введите пароль",
+                 "class": "MyInput"
             }
         ),
         required=True

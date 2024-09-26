@@ -2,11 +2,19 @@
 
 {% block content %}
 <div class="container mx-auto">
-    <form class="w-[600px] mx-auto rounded p-3 bg-gray-300" action="" method="post">
+    <form class="w-[600px] mx-auto rounded p-3 bg-gray-300 flex flex-col gap-3" action="" method="post">
     {% csrf_token %}
-    {{ form.as_p }}
+    {{ form.username }}
+    {{ form.password }}
     <button type="submit" class="p-1 bg-gray-500 rounded mt-4">Войти</button>
 </form>
 </div>
+<style>
+    .MyInput {
+        border-radius: 4px;
+        padding: 5px 10px;
+    }
+
+</style>
 
 {% endblock content %}

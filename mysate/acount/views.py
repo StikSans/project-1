@@ -3,6 +3,8 @@ from django.shortcuts import redirect, render
 from .forms import RegisterUser, LoginUser
 from django.contrib.auth.models import User
 from django.contrib.auth import login as login_dj, logout
+from django.contrib.auth.decorators import login_required
+from .models import Profile
 
 # Create your views here.
 def register(req:HttpRequest):
@@ -40,3 +42,8 @@ def logout_user(req: HttpRequest):
         logout(req)
     
     return redirect('home')
+
+
+@login_required(login_url='login')
+def profile_view(req: HttpRequest):
+    pass

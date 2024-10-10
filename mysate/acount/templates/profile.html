@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="mx-auto w-[600px] flex gap-3 flex-col">
+	<h1 class="text-center text-2xl ">Личный кабинет</h1>
+	<div class="w-[600px] bg-gray-300 rounded mx-auto p-3">
+			
+		
+		<div class="text-xl">Имя: {{user.username}}</div>
+		<div class="text-xl">Электроная почта: {{user.email}}</div>
+		<div class="text-xl">Пол: {{user.profile.gender|yesno:'Неизвестный'}}</div>
+		<div class="text-xl"></div>
+	</div>
+</div>
+{% endblock content %}

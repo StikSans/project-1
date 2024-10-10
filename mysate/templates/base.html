@@ -24,7 +24,7 @@
                     </li>
                     {% if request.user.username %}
 
-                        <li>{{request.user.username}}</li>
+                        <li><a href="{% url "profile"%}">{{request.user.username}}</a></li>
                         <li>
                             <form action="{% url "logout" %}" method="post">
                                {% csrf_token %}

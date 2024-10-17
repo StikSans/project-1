@@ -18,12 +18,14 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.shortcuts import redirect
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('library/', include('library.urls')),
     path('technique/', include('technique.urls')),
     path('acount/', include('acount.urls')),
+    path('', lambda req: redirect('home'))
     ]
 
 if settings.DEBUG:

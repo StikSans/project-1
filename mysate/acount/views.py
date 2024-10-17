@@ -46,15 +46,14 @@ def logout_user(req: HttpRequest):
 
 @login_required(login_url='login')
 def profile_view(req: HttpRequest):
+    print(req.user.profile.gender)
     return render(req, 'profile.html')
 
 
 def settings_profile(req:HttpRequest):
-    print(req.user.profile.user_id)
     user = Profile.objects.select_related('user').get(user_id = req.user.profile.user_id)
-   
+    
     if req.method == "POST":
-        print(user.gender)
         user.user.username = req.POST['username']
         user.user.email = req.POST['email']
         user.gender = req.POST['gender']

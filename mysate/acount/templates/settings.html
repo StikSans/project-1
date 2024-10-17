@@ -3,21 +3,21 @@
 {% block content %}
 <div class="mx-auto w-[600px] flex gap-3 flex-col">
 	<h1 class="text-center text-2xl ">Личный кабинет</h1>
-	<form method="post" class="w-[600px] flex gap-3 flex-col bg-gray-300 rounded mx-auto p-3">
+	<form action="{% url "setting" %}" method="post" class="w-[600px] flex gap-3 flex-col bg-gray-300 rounded mx-auto p-3">
 		{% csrf_token %}
         <input type="text" class="text-xl rounded p-2" id="username" placeholder="Имя" name="username" value="{{user.username}}">
         <input type="email" class="text-xl rounded p-2" id="email" placeholder="Электроная почта" name="email" value="{{user.email}}">
         <select id='gender' name="gender" class="rounded p-2 ">
             <option  class="text-xl" value="">Выберите пол</option>
-            <option class="text-xl" value="m">Мужской</option>
-            <option class="text-xl" value="w">Женщина</option>
+            <option class="text-xl" value="Мужской">Мужской</option>
+            <option class="text-xl" value="Женщина">Женщина</option>
         </section>
         <input type="text" class="text-xl rounded p-2" id="country" placeholder="Страна" name='country' value="{{user.profile.country}}">
         <input type="text" class="text-xl rounded p-2" id="city" placeholder="Город" name="city" value="{{user.profile.city}}">
         <input type="text" class="text-xl rounded p-2" id="street" placeholder="Улица" name="street" value="{{user.profile.street}}">
         <input type="text" class="text-xl rounded p-2" id="house" placeholder="Дом" name="house" value="{{user.profile.house}}">
         <input type="number" class="text-xl rounded p-2" id="apartment_number" placeholder="Номер дома" name="apartament_number" value="{{user.profile.apartament_number}}">
-		<a href="{% url "setting" %}" class="text-xl rounded bg-gray-600 text-white p-2 flex-end text-center">Редактировать</a>
+		<input type="submit" class="text-xl rounded bg-gray-600 text-white p-2 flex-end text-center" value="Редактировать">
 	</form>
 </div>
 {% endblock content %}

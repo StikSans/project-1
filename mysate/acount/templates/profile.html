@@ -8,7 +8,7 @@
 		
 		<div class="text-xl">Имя: {{user.username}}</div>
 		<div class="text-xl">Электроная почта: {{user.email}}</div>
-		<div class="text-xl">Пол: {{user.profile.gender|default:'Неизвестный'}}</div>
+		<div class="text-xl">Пол: {{user.profile.gender|yesno:'Неизвестный'}}</div>
 		<div class="text-xl">Страна: {{user.profile.country|default:'Неизвестный'}}</div>
 		<div class="text-xl">Город: {{user.profile.city|default:'Неизвестный'}}</div>
 		<div class="text-xl">Улица: {{user.profile.street|default:'Неизвестный'}}</div>
